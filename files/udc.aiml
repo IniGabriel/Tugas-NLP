@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      Maaf, saya tidak menemukan jawaban yang tepat. 
+      Saya adalah bot yang menjawab pertanyaan terkait jurnal 
+      "Analisis Opini Terkait Program Makan Bergizi Gratis". 
+      Silakan ajukan pertanyaan yang lebih spesifik.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA ITU JURNAL ANDA</pattern>
+    <template>
+      Jurnal ini berjudul "Analisis Opini Terkait Program Makan Bergizi Gratis". 
+      Tujuannya menganalisis sentimen masyarakat terhadap kebijakan tersebut 
+      sebelum dan sesudah program berjalan menggunakan model prediksi sentimen.
+    </template>
+  </category>
+
+  <category>
+    <pattern>TENTANG APA JURNAL ANDA</pattern>
+    <template>
+      Jurnal ini membahas bagaimana opini masyarakat terhadap Program Makan 
+      Bergizi Gratis, menggunakan analisis sentimen berbasis machine learning 
+      untuk mengukur perubahan persepsi publik.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA METODOLOGI YANG DIGUNAKAN</pattern>
+    <template>
+      Metodologi meliputi pengumpulan data opini publik, preprocessing teks, 
+      pelabelan sentimen, ekstraksi fitur, pelatihan model FastText, prediksi 
+      opini sebelum dan sesudah program, serta analisis perubahan persepsi masyarakat.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA METODENYA</pattern>
+    <template>
+      Proses dimulai dari pengumpulan data opini, pembersihan teks, pelabelan, 
+      pelatihan model FastText, prediksi sentimen, dan perbandingan opini pada dua periode.
+    </template>
+  </category>
+
+  <category>
+    <pattern>DATA APA YANG DIPAKAI</pattern>
+    <template>
+      Dataset berisi opini masyarakat terkait Program Makan Bergizi Gratis dari 
+      berbagai platform. Data dilabeli menjadi positif, negatif, dan netral 
+      untuk melatih model analisis sentimen.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA PEMBERIAN LABEL</pattern>
+    <template>
+      Label diberikan secara manual berdasarkan isi opini. Positif berisi dukungan, 
+      negatif berisi kritik, dan netral bersifat informatif tanpa emosi yang kuat.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MODEL APA YANG DIGUNAKAN</pattern>
+    <template>
+      Model yang digunakan adalah FastText. 
+      FastText dipilih karena mampu mempelajari representasi kata dan sub-kata 
+      secara cepat, efisien, serta memiliki performa yang baik untuk 
+      klasifikasi teks pendek seperti opini publik. 
+      Model ini menghasilkan tiga output sentimen: positif, negatif, dan netral.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA MODEL DILATIH</pattern>
+    <template>
+      Model FastText dilatih menggunakan teks yang sudah dibersihkan dan diberi label. 
+      Data diubah ke format training FastText, kemudian model dilatih untuk mengenali 
+      pola-pola kata yang merepresentasikan sentimen positif, negatif, dan netral. 
+      Setelah itu model diuji dan digunakan untuk memprediksi opini pada dua periode.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA HASIL ANALISIS SEBELUM PROGRAM</pattern>
+    <template>
+      Sebelum program berjalan, opini publik cenderung didominasi sentimen negatif 
+      dan keraguan terkait kesiapan implementasi. Sentimen positif muncul dari 
+      kelompok yang berharap program berhasil.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA HASIL ANALISIS SESUDAH PROGRAM</pattern>
+    <template>
+      Setelah program berjalan, sentimen positif meningkat karena masyarakat mulai 
+      merasakan manfaat program. Sentimen negatif menurun meski kritik masih ada 
+      di beberapa wilayah.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA PERBEDAAN SEBELUM DAN SESUDAH PROGRAM</pattern>
+    <template>
+      Terjadi peningkatan sentimen positif dan penurunan sentimen negatif setelah 
+      program berjalan, menunjukkan perubahan persepsi masyarakat yang lebih baik.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA IMPLEMENTASI KODENYA</pattern>
+    <template>
+      Implementasi meliputi preprocessing teks, format pelatihan FastText, pelatihan model, 
+      dan prediksi sentimen dari input pengguna secara real-time.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BISA JELASKAN RUNTIME PROGRAM</pattern>
+    <template>
+      Program bekerja sangat cepat karena FastText dirancang untuk 
+      prediksi real-time. Input pengguna langsung diproses dan diprediksi 
+      dalam hitungan milidetik.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA KELEBIHANNYA</pattern>
+    <template>
+      Kelebihan penelitian ini adalah penggunaan FastText yang cepat dan efisien, 
+      akurasi tinggi, analisis dua periode, serta bisa menerima input baru 
+      untuk prediksi sentimen secara langsung.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA KEKURANGANNYA</pattern>
+    <template>
+      Kekurangan termasuk keterbatasan dataset, potensi bias opini, 
+      dan FastText yang belum sekuat model transformer dalam memahami konteks panjang.
+    </template>
+  </category>
+
+  <category>
+    <pattern>PENELITIAN LANJUTAN APA</pattern>
+    <template>
+      Penelitian lanjutan dapat menggunakan IndoBERT atau transformer lain, 
+      memperluas data opini publik, melakukan analisis aspek, atau 
+      mengukur emosi masyarakat secara lebih detail.
+    </template>
+  </category>
+
+</aiml>
